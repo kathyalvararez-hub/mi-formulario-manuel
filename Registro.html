@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Extraescolar — Baloncesto</title>
+    <!-- Bootstrap CSS para un diseño limpio y profesional -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 class="form-title"><b>Inscripción a Actividad Extraescolar</b></h2>
+            <h4 class="text-center text-muted" style="margin-bottom: 25px;">Disciplina: Baloncesto</h4>
+
+            <!-- Formulario solicitado -->
+            <form action="#" method="POST">
+                
+                <!-- Campo de texto para el nombre -->
+                <div class="form-group">
+                    <label for="nombre">Nombre completo del alumno:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+
+                <!-- Campo para número (limita la entrada a solo números, ej. número de control o edad) -->
+                <div class="form-group">
+                    <label for="numero_control">Número de control / Matrícula:</label>
+                    <input type="number" class="form-control" id="numero_control" name="numero_control" placeholder="Ej. 23157001" required>
+                </div>
+
+                <!-- Botones de opción (radio) para el semestre (2do, 4to, 6to) -->
+                <div class="form-group">
+                    <label>Semestre que cursa:</label>
+                    <div class="radio">
+                        <label><input type="radio" name="semestre" value="2do" required> 2do Semestre</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="semestre" value="4to"> 4to Semestre</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="semestre" value="6to"> 6to Semestre</label>
+                    </div>
+                </div>
+
+                <!-- Lista desplegable (select) para elegir el turno (Matutino o Vespertino) -->
+                <div class="form-group">
+                    <label for="turno">Turno:</label>
+                    <select class="form-control" id="turno" name="turno" required>
+                        <option value="">Selecciona tu turno...</option>
+                        <option value="Matutino">Matutino</option>
+                        <option value="Vespertino">Vespertino</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Botón de envío (submit) -->
+                <div class="form-group text-center">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar Inscripción">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
